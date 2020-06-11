@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/netflix-icon.ico">
+</head>
+
+<body>
+    <!--HOME-->
+
+    <div id="home-wrapper">
+        <header>
+            <img id="header-logo" src="image/netflix-logo.png" alt="Netflix logo">
+            <a id="header-signin" href="https://www.netflix.com/login" class="font-light">Sign In</a>
+        </header>
+
+        <div id="center-wrapper">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <h2 class="font-light">Watch anywhere. Cancel anytime.</h2>
+
+            <div id="form-wrapper">
+                <form action="https://www.netflix.com/signup">
+                    <input id="email" type="email" name="email" placeholder="Email address" required>
+                    <button id="email-submit" type="submit">
+                        <div id="submit-div">
+                            <p> TRY IT NOW</p>
+                            <img class="icon" src="image/arrow.png" alt="">
+                        </div>
+                    </button>
+                </form>
+
+                <p id="p-under-form" class="font-light">Ready to watch? Enter your email to create or restart your
+                    membership.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--ENJOY ON YOUR TV-->
+    <div class="section-wrapper">
+        <div class="section-center-wrapper">
+            <div class="section-sidetext">
+                <h1>Enjoy on your TV.</h1>
+                <h2 class="font-light">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and
+                    more.</h2>
+            </div>
+            <div class="section-media" id="tv-animation">
+                <video id="tv-video" src="image/tv/video-tv.m4v" muted autoplay loop></video>
+                <img id="tv-overlay" src="image/tv/tv.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--DOWNLOAD SHOWS-->
+    <div class="section-wrapper">
+        <div class="section-center-wrapper">
+            <div class="section-sidetext" id="download-sidetext">
+                <h1>Download your shows to watch offline.</h1>
+                <h2 class="font-light">Save your favorites easily and always have something to watch.</h2>
+            </div>
+            <div class="section-media" id="download">
+                <img id="mobile" src="image/mobile.jpg" alt="">
+                <div id="mobile-download">
+                    <img id="show-cover" src="image/show-cover.png" alt="">
+                    <div id="mobile-download-text">
+                        <h3>Stranger Things</h3>
+                        <h4>Downloading...</h4>
+                    </div>
+                    <div id="mobile-download-animation">
+                        <img class="animation-element" id="download-icon" src="image/dw-animation/download.png" alt="">
+                        <img class="animation-element" id="loading-icon" src="image/dw-animation/loading.png" alt="">
+                        <img class="animation-element" id="smartphone-icon" src="image/dw-animation/smarphone.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--WATCH EVERYWHERE-->
+    <div class="section-wrapper" id="devices-wrapper">
+        <div class="section-center-wrapper">
+            <div class="section-sidetext" id="devices-sidetext">
+                <h1>Watch everywhere.</h1>
+                <h2 class="font-light">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV
+                    without paying more.</h2>
+            </div>
+            <div class="section-media" id="devices-animation">
+                <video id="devices-video" src="image/devices/video-devices.m4v" muted autoplay loop></video>
+                <img id="devices-overlay" src="image/devices/devices.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--FAQ-->
+    <!--FOOTER-->
+
+</body>
+
+</html>

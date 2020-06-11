@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root{
+    --netflix-red:  #e50914;
+    --section-top-margin: 0.5rem;
+}
+body{
+    font-family: Nunito Sans, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    background-color: #222;
+    color: white;
+}
+.font-light{
+    font-weight: 400;
+}
+/*  HOME  */
+#home-wrapper{    
+    height: 44.55rem;  
+    width: 100vw;
+
+    background-image: url(image/bg-titles.jpg);
+    background-position: center;
+    box-shadow: inset 0 0 1000px 100px  black;
+    /*
+    -webkit-box-shadow:inset0 0 0 1000px 100px black;
+    -moz-box-shadow:inset 0 0 1000px 100px black;
+    -o-box-shadow:inset 0 0 1000px 100px black;*/
+}
+
+/*  home header */
+header{    
+    width: 100%;
+    padding-top: 1.75rem;       
+}
+#header-logo{
+    margin-left: 3.5rem;
+}
+#header-signin{    
+    color: white;
+    text-decoration: none;    
+
+    background-color: var(--netflix-red) ;
+    border-radius: 0.18rem;
+    padding: 0.36rem 1rem 0.35rem 1rem ;
+    margin-right: 4.5rem;
+
+    float: right;  
+}   /*  /home header  */
+
+    /*  home center section  */
+#center-wrapper{   
+    margin: 10.65rem auto 0 auto;
+    width: 50rem;
+    text-align: center;    
+}
+#center-wrapper h1{
+    margin: 0;
+    font-size: 4.2em;
+    line-height: 1em;
+}
+#center-wrapper h2{    
+    margin: 1.12rem 0 1.75rem 0;
+    font-size: 1.7em;
+}
+
+#center-wrapper form{
+    position: relative;
+    height: 4.56rem;
+    width: 47.62rem;
+}
+#email{
+    position: absolute;
+    left: 0;
+    width: 31.25rem;
+    height: 4.25rem;
+    padding: 0;  
+    border: 1px darkgrey solid; 
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    text-indent: 0.62rem;
+    font-size: 1.1rem;
+    
+}
+#email-submit{
+    position: absolute;
+    right: 0;
+
+    height: 4.37rem;
+    width: 16.25rem;
+
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left: 1px grey solid;
+    background-color: var(--netflix-red);          
+}
+#email-submit:hover{
+    background-color: #f40612;
+    cursor: pointer;
+}
+#submit-div{   
+    position: absolute;    
+    left: 50%;
+    transform: translateX(-50%);   
+    top: 25%;
+
+    width: 13rem;
+    
+}
+#submit-div p{
+    display: inline;
+    color: white;
+    padding: 0;
+    margin: 0;
+    padding-right: 0.5rem;
+    font-size: 1.8rem;
+}
+.icon{
+    height: 1.25rem;
+}
+#p-under-form{
+    font-size: 1.2em;
+    margin-top: 6px;
+}
+/*  /home center div */  /*  /HOME  */
+
+/* ENJOY YOUR TV*/
+
+.section-wrapper{    
+    background-color: black;
+    margin-top: var(--section-top-margin);        
+    width: 100vw;
+}
+.section-center-wrapper{
+    position: relative;
+    width: 71rem;
+    height: 29rem;
+    margin: 0 auto 0 auto;
+}
+/*  text  */
+.section-sidetext{
+    position: absolute;
+    width: 34rem;
+    top: 9rem;       
+}
+.section-sidetext h1{
+    margin: 0 0 0.6rem;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+}
+.section-sidetext h2{
+    font-size: 1.7rem;
+}/*  /text  */
+
+/* tv animation*/
+.section-media{
+    position: relative;     
+    top:1.35rem;
+    
+}
+#tv-animation{
+    right: 0; 
+}
+#tv-overlay{
+    position: absolute;
+    width: 33.15rem;
+    height: auto;
+    right: 0;
+    top: 50%;    
+}
+#tv-video{
+    position: absolute;    
+    right: 4.6em;
+    top: 5.2em;
+    width: 24rem;
+}/*  /tv animation*/ /*  /ENJOY YOUR TV  */
+
+/* DOWNLOAD */
+
+#download-sidetext{
+    right: 0;
+    margin-right: 1.7rem;
+}
+
+#donwload{
+    width: 31.5rem;
+}
+#mobile{
+    position: relative;
+    left: -4.1rem;
+    width: 31.5rem;
+    margin-top: .7rem;
+   
+}
+#mobile-download{
+    position: absolute;
+    bottom: 2rem;
+    left: 1.3rem;
+    width: 20.4rem;
+    height: 6.25rem;    
+    border: 2px solid #444;
+    border-radius: 13px;
+    background-color: black;
+    box-shadow: 0 0 15px 2px black;
+}
+#show-cover{
+    width: 3.57rem;
+    margin: .5rem .6rem .25rem .75rem;
+}
+#mobile-download-text{
+    position: absolute;    
+    top: 1.8rem;
+    width: 9rem;
+    display: inline-block;
+    margin-left: .5rem;
+}
+#mobile-download-text h3{
+    margin: 0;
+    font-size: 1rem;
+}
+#mobile-download-text h4{
+    margin: 0;
+    font-size: .9rem;
+    font-weight: lighter;
+    color: #1c5cfc;
+    
+}
+#mobile-download-animation{
+    position: absolute;
+    right: 1.7rem;
+    top: 2.5rem;
+    
+}
+.animation-element{
+    width: 1.5rem;
+    position: absolute;
+    right: 0;
+    display: block;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+
+#download-icon{   
+    animation: download-animation 7s infinite;  
+    width: 1.2rem;
+    right: 0.2rem;
+}
+@keyframes download-animation{
+    0%{opacity: 1;}
+    18%{opacity: 1;}
+    20%{opacity: 0;}
+}
+#loading-icon{   
+    animation: loading-animation 7s infinite;
+    animation-timing-function: linear;
+}
+@keyframes loading-animation{
+    19%{opacity: 0;
+        transform: rotate(900deg);}
+    20%{opacity: 1;}
+    78%{opacity: 1;}
+    80%{opacity: 0;
+        transform: rotate(0deg);}
+}
+#smartphone-icon{    
+    animation: smartphone-animation 7s infinite;
+}
+@keyframes smartphone-animation{   
+    79%{opacity: 0;}
+    80%{opacity: 1;}
+    99%{opacity: 1;}
+    100%{opacity: 0;}
+}/*  /DOWNLOAD  */
+
+/*  DEVICES  */
+#devices-sidetext{   
+    top: 11rem;
+}
+#devices-wrapper{
+    height: 33rem;
+}
+
+#devices-animation{
+    right: 0; 
+}
+#devices-video{
+    position: absolute;
+    width: 21.8rem;
+    height: auto;
+    right: 5rem;
+    top: 4rem;
+        
+}
+#devices-overlay{
+    position: absolute;      
+    width: 34.7rem;
+    right: -1.5rem;
+    top: 1rem;
+}

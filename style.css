@@ -5,7 +5,7 @@
     --netflix-red:  #e50914;    
 }
 /*  DEBUG  
-body, div, header, img, a, h1, h2, h3, h4, h5, h6, p, form, input, button, video{
+body, div, header, img, ul, ol, li, a, h1, h2, h3, h4, h5, h6, p, form, input, button, select, option, video{
     border: 1px red solid !important;   
 } /* /DEBUG  */
 
@@ -23,6 +23,9 @@ body{
     background-color: #222;
     height: .5rem;
 }
+
+
+
 /*  HOME  */
 #home-wrapper{    
     height: 44.55rem;    
@@ -34,9 +37,7 @@ body{
 }
 
 /*  home header */
-header{        
-    width: 100%;
-    max-width: 1920px;
+header{
     padding-top: 1.75rem;   
     margin: 0 auto;    
 }
@@ -46,13 +47,11 @@ header{
 }
 #header-signin{    
     color: white;
-    text-decoration: none;    
-
+    text-decoration: none;
     background-color: var(--netflix-red) ;
     border-radius: 0.18rem;
     padding: 0.36rem 1rem 0.35rem 1rem ;
     margin-right: 3.5rem;
-
     float: right;  
 }   /*  /home header  */
 
@@ -72,6 +71,7 @@ header{
     font-size: 1.7em;
 }
 
+/*  form  */
 .form-wrapper{
     position: relative;
     height: 4.56rem;
@@ -132,7 +132,12 @@ header{
     top: 3.8rem;
     left: 5rem;
 }
-/*  /home center div */  /*  /HOME  */
+/*  /form  */
+/*  /home center div */
+/*  /HOME  */
+
+
+
 
 /* ENJOY YOUR TV*/
 
@@ -142,7 +147,7 @@ header{
     height: 29rem;
     margin: 0 auto 0 auto;
 }
-/*  text  */
+/*  sidetext  */
 .section-sidetext{
     position: absolute;
     width: 34rem;
@@ -155,16 +160,12 @@ header{
 }
 .section-sidetext h2{
     font-size: 1.7rem;
-}/*  /text  */
+}/*  /sidetext  */
 
 /* tv animation*/
 .section-media{
     position: relative;     
-    top:1.35rem;
-    
-}
-#tv-animation{
-    right: 0; 
+    top:1.35rem;    
 }
 #tv-overlay{
     position: absolute;
@@ -175,21 +176,24 @@ header{
 }
 #tv-video{
     position: absolute;    
-    right: 4.6em;
-    top: 5.2em;
     width: 24rem;
-}/*  /tv animation*/ /*  /ENJOY YOUR TV  */
+    right: 4.6em;
+    top: 5.2em;    
+}/*  /tv animation*/
+/*  /ENJOY YOUR TV  */
+
+
+
 
 /* DOWNLOAD */
-
+/*  sidetext  */
 #download-sidetext{
     right: 0;
     margin-right: 1.7rem;
 }
+/*  /sidetext  */
+/*  mobile  */
 
-#donwload{
-    width: 31.5rem;
-}
 #mobile{
     position: relative;
     left: -4.1rem;
@@ -229,7 +233,9 @@ header{
     font-weight: lighter;
     color: #1c5cfc;
     
-}
+} /*  /mobile  */
+
+/*  mobile animation  */
 #mobile-download-animation{
     position: absolute;
     right: 1.7rem;
@@ -275,16 +281,21 @@ header{
     80%{opacity: 1;}
     99%{opacity: 1;}
     100%{opacity: 0;}
-}/*  /DOWNLOAD  */
+}/* /mobile animation */
+/* /DOWNLOAD  */
+
+
+
 
 /*  DEVICES  */
+/*  devices sidetex  */
 #devices-sidetext{   
     top: 11rem;
-}
+}/*  /devices sidetex  */
+/*  devices animation  */
 #devices-wrapper{
-    height: 33rem;
+    margin-bottom: 4.2rem;
 }
-
 #devices-animation{
     right: 0; 
 }
@@ -301,11 +312,18 @@ header{
     width: 34.7rem;
     right: -1.5rem;
     top: 1rem;
-}/*  /DEVICES  */
+}/* /devices animation*/
+/* /DEVICES  */
+
+
+
 
 /*  FAQ  */
+/* faq elements*/
 #faq-wrapper{
-    width: 50.8rem;
+    max-width: 50.8rem;
+    width: 50%;
+    min-width: 43rem;
     height: 51.5rem;
 }
 #faq-wrapper > h1{
@@ -331,10 +349,96 @@ header{
     float: right;
     width: 1.5rem;
     margin: 1.5rem;
-}
-#under-faq-form{
+} /*  /faq elements  */
+/* faq form*/
+#faq-form{
     margin-top: 4rem;
+}/*  /faq form */
+/* /FAQ   */
+
+
+
+
+/*  FOOTER  */
+#footer-wrapper{
+    color: #757575;  
+    margin: 4.5rem auto 0 auto;  
+
 }
-
-/*  /FAQ   */
-
+#footer-center-wrapper{    
+    height: auto;    
+    max-width: 56.25rem; 
+    width: 80%;
+}
+/*  footer links */
+#contact-number{   
+   color: inherit;
+   font-weight: 600;
+   margin-bottom: 1.7rem;   
+   margin-left: auto;
+}
+#contact-number-link{
+    color: inherit;
+    text-decoration: none;
+}
+#footer-center-wrapper a:hover{
+    text-decoration: underline;
+}
+#footer-links{
+    list-style-type: none;        
+    display: flex;
+    flex-wrap: wrap;    
+    font-weight: 500;
+    padding: 0;
+}
+.footer-link-container{     
+    width: 25%;
+    min-width: 150px;
+    margin-bottom: 0.63rem;
+    
+}
+.footer-link-element{
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+/*  /footer links*/
+/*  language selector  */
+#language-selector{
+    position: relative;    
+    width: 8.5rem;
+    
+}
+#language-selector::before{
+    content: url(image/globe-icon.png);
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translate(-50%, -50%)
+}
+#language-selector::after{
+    content: url(image/language-arrow.png);
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+#lang-dropdown{
+    color: #999;        
+    border: 1px solid #333;
+    border-radius: 2px;
+    font-size: 1rem;
+    background-color: black;
+    width: inherit;
+    height: 3.3rem;
+    padding-left: 50px;   
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+}
+#footer-center-wrapper h6{
+    font-size: .8rem;    
+    margin: 1.5rem 0 2rem 0;
+}
+/*  /language selector */
+/*  /FOOTER  */
